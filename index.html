@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nikhil Saini</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nikhil Saini</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section-pic-container">
+        <img src="./assets/profilePic.png" alt="Profile Picture" />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello I'm</p>
+        <h1 class="title">Nikhil Saini</h1>
+        <p class="section-text-p2">Tech Enthusiast</p>
+        <div class="button-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn Profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/in/nikhilsaini08 '"
+            />
+            <img
+              src="./assets/github.png"
+              alt="Github Profile"
+              class="icon"
+              onclick="location.href='https://github.com/nikhilsaini113 '"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section-text-p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section-pic-container">
+          <img src="assets/aboutPic.jpeg" alt="profilePic" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p></p>
+              <p>
+                B.Tech in Computer Science and Engineering-The LNM Institute of
+                Information Technology,Jaipur <br />2022-Present<br />
+              </p>
+              <p>
+                Joint Entrace Exam Mains(JEE Mains)
+                <br />Percentile-97.77
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>No experience as of now.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Solicitous programmer looking to prove my skills in a fast-paced
+              and challenging role through a position that can offer career
+              growth support. A developer who loves to explore new
+              technologies,develop software solutions and quick hacks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section-text-p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Web-Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>HTML</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>CSS</h3>
+                <!-- <p>Basic</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>Javascript</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>NodeJS</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>ExpressJS</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>React</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>SQL</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>C</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>C++</h3>
+                <!-- <p>Basic</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>Java</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>Javascript</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Others</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>Data Structures & Algorithms</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>Git & Github</h3>
+                <!-- <p>Basic</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>SQL</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skill icon"
+                  class="icon"
+                />
+                <h3>Object Oriented Programming</h3>
+                <!-- <p>Intermediate</p> -->
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section-text-p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:nikhilsaini.rtk@gmail.com"
+              >nikhilsaini.rtk@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://linkedin.com/in/nikhilsaini08">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <p>Copyright &#169; 2023 Nikhil Saini</p>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
